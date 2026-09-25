@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Watch Brand - Market Survey</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <!-- =========================================
+             HEADER
+        ========================================== -->
+
+        <div class="header">
+
+            <div class="watch-icon">
+                ⌚
+            </div>
+
+            <h1>
+                Custom Watch Brand
+            </h1>
+
+            <p>
+                Help us design the future of watches in India.
+                Tell us what you think about a watch brand that lets
+                you create your own unique watch.
+            </p>
+
+            <div class="time">
+                ⏱ Takes only 2–3 minutes
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             PROGRESS BAR
+        ========================================== -->
+
+        <div class="progress-container">
+
+            <div class="progress-text">
+
+                <span>
+                    Survey Progress
+                </span>
+
+                <span id="progressText">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             SURVEY FORM
+        ========================================== -->
+
+        <form id="surveyForm">
+
+
+            <!-- =====================================
+                 RESPONDENT INFORMATION
+            ====================================== -->
+
+            <div class="question respondent-info">
+
+                <div class="question-number">
+                    ABOUT YOU
+                </div>
+
+
+                <h2>
+                    A little about you
+                </h2>
+
+
+                <p class="optional-note">
+
+                    Name and email are optional.
+                    You can keep your response completely anonymous.
+
+                </p>
+
+
+
+                <!-- NAME -->
+
+                <div class="input-group">
+
+                    <label for="respondentName">
+
+                        Name
+
+                        <span>
+                            (Optional)
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="respondentName"
+                        name="respondentName"
+                        placeholder="Enter your name">
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="respondentEmail">
+
+                        Email
+
+                        <span>
+                            (Optional)
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="respondentEmail"
+                        name="respondentEmail"
+                        placeholder="Enter your email address">
+
+                </div>
+
+
+
+                <!-- STATE -->
+
+                <div class="input-group">
+
+                    <label for="respondentState">
+
+                        State / Union Territory
+
+                        <span class="required">
+                            *
+                        </span>
+
+                    </label>
+
+
+                    <select
+                        id="respondentState"
+                        name="respondentState"
+                        required>
+
+                        <option value="">
+                            Select your state / union territory
+                        </option>
+
+                        <option value="Andhra Pradesh">
+                            Andhra Pradesh
+                        </option>
+
+                        <option value="Arunachal Pradesh">
+                            Arunachal Pradesh
+                        </option>
+
+                        <option value="Assam">
+                            Assam
+                        </option>
+
+                        <option value="Bihar">
+                            Bihar
+                        </option>
+
+                        <option value="Chhattisgarh">
+                            Chhattisgarh
+                        </option>
+
+                        <option value="Goa">
+                            Goa
+                        </option>
+
+                        <option value="Gujarat">
+                            Gujarat
+                        </option>
+
+                        <option value="Haryana">
+                            Haryana
+                        </option>
+
+                        <option value="Himachal Pradesh">
+                            Himachal Pradesh
+                        </option>
+
+                        <option value="Jharkhand">
+                            Jharkhand
+                        </option>
+
+                        <option value="Karnataka">
+                            Karnataka
+                        </option>
+
+                        <option value="Kerala">
+                            Kerala
+                        </option>
+
+                        <option value="Madhya Pradesh">
+                            Madhya Pradesh
+                        </option>
+
+                        <option value="Maharashtra">
+                            Maharashtra
+                        </option>
+
+                        <option value="Manipur">
+                            Manipur
+                        </option>
+
+                        <option value="Meghalaya">
+                            Meghalaya
+                        </option>
+
+                        <option value="Mizoram">
+                            Mizoram
+                        </option>
+
+                        <option value="Nagaland">
+                            Nagaland
+                        </option>
+
+                        <option value="Odisha">
+                            Odisha
+                        </option>
+
+                        <option value="Punjab">
+                            Punjab
+                        </option>
+
+                        <option value="Rajasthan">
+                            Rajasthan
+                        </option>
+
+                        <option value="Sikkim">
+                            Sikkim
+                        </option>
+
+                        <option value="Tamil Nadu">
+                            Tamil Nadu
+                        </option>
+
+                        <option value="Telangana">
+                            Telangana
+                        </option>
+
+                        <option value="Tripura">
+                            Tripura
+                        </option>
+
+                        <option value="Uttar Pradesh">
+                            Uttar Pradesh
+                        </option>
+
+                        <option value="Uttarakhand">
+                            Uttarakhand
+                        </option>
+
+                        <option value="West Bengal">
+                            West Bengal
+                        </option>
+
+
+                        <!-- UNION TERRITORIES -->
+
+                        <option value="Andaman and Nicobar Islands">
+                            Andaman and Nicobar Islands
+                        </option>
+
+                        <option value="Chandigarh">
+                            Chandigarh
+                        </option>
+
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">
+                            Dadra and Nagar Haveli and Daman and Diu
+                        </option>
+
+                        <option value="Delhi">
+                            Delhi
+                        </option>
+
+                        <option value="Jammu and Kashmir">
+                            Jammu and Kashmir
+                        </option>
+
+                        <option value="Ladakh">
+                            Ladakh
+                        </option>
+
+                        <option value="Lakshadweep">
+                            Lakshadweep
+                        </option>
+
+                        <option value="Puducherry">
+                            Puducherry
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <p class="privacy-note">
+
+                    🔒 Your name and email are optional.
+                    You may participate anonymously.
+                    Survey data is used for market research.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 01
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 01
+                </div>
+
+
+                <h2>
+                    What is your age group?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="age"
+                            id="age1"
+                            value="Under 18"
+                            required>
+
+                        <label for="age1">
+                            Under 18
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="age"
+                            id="age2"
+                            value="18-24">
+
+                        <label for="age2">
+                            18–24
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="age"
+                            id="age3"
+                            value="25-34">
+
+                        <label for="age3">
+                            25–34
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="age"
+                            id="age4"
+                            value="35-44">
+
+                        <label for="age4">
+                            35–44
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="age"
+                            id="age5"
+                            value="45-54">
+
+                        <label for="age5">
+                            45–54
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="age"
+                            id="age6"
+                            value="55+">
+
+                        <label for="age6">
+                            55+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 02
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 02
+                </div>
+
+
+                <h2>
+                    How often do you wear a watch?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="wear"
+                            id="wear1"
+                            value="Every day"
+                            required>
+
+                        <label for="wear1">
+                            Every day
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="wear"
+                            id="wear2"
+                            value="Frequently">
+
+                        <label for="wear2">
+                            Frequently
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="wear"
+                            id="wear3"
+                            value="Occasionally">
+
+                        <label for="wear3">
+                            Occasionally
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="wear"
+                            id="wear4"
+                            value="Rarely">
+
+                        <label for="wear4">
+                            Rarely
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="wear"
+                            id="wear5"
+                            value="Never">
+
+                        <label for="wear5">
+                            Never
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 03
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 03
+                </div>
+
+
+                <h2>
+                    What type of watch do you prefer?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            id="type1"
+                            value="Analog"
+                            required>
+
+                        <label for="type1">
+                            ⌚ Analog
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            id="type2"
+                            value="Digital">
+
+                        <label for="type2">
+                            🔢 Digital
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            id="type3"
+                            value="Smartwatch">
+
+                        <label for="type3">
+                            ⌚ Smartwatch
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            id="type4"
+                            value="Analog + Digital">
+
+                        <label for="type4">
+                            Analog + Digital
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            id="type5"
+                            value="No specific preference">
+
+                        <label for="type5">
+                            No specific preference
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 04
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 04
+                </div>
+
+
+                <h2>
+                    What style of watch do you prefer?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style1"
+                            value="Casual"
+                            required>
+
+                        <label for="style1">
+                            Casual
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style2"
+                            value="Formal">
+
+                        <label for="style2">
+                            Formal
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style3"
+                            value="Sports">
+
+                        <label for="style3">
+                            Sports
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style4"
+                            value="Luxury / Premium">
+
+                        <label for="style4">
+                            Luxury / Premium
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style5"
+                            value="Minimalist">
+
+                        <label for="style5">
+                            Minimalist
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style6"
+                            value="Vintage / Classic">
+
+                        <label for="style6">
+                            Vintage / Classic
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="style"
+                            id="style7"
+                            value="Fashion / Trendy">
+
+                        <label for="style7">
+                            Fashion / Trendy
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 05
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 05
+                </div>
+
+
+                <h2>
+                    Which customization options would you like?
+                </h2>
+
+
+                <div class="subtitle">
+                    Select all that apply.
+                </div>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom1"
+                            value="Dial color/design">
+
+                        <label for="custom1">
+                            🎨 Dial color / design
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom2"
+                            value="Strap material">
+
+                        <label for="custom2">
+                            🪢 Strap material
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom3"
+                            value="Strap color">
+
+                        <label for="custom3">
+                            🌈 Strap color
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom4"
+                            value="Case material">
+
+                        <label for="custom4">
+                            ⚙️ Case material
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom5"
+                            value="Case color/finish">
+
+                        <label for="custom5">
+                            ✨ Case color / finish
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom6"
+                            value="Glass type">
+
+                        <label for="custom6">
+                            💎 Glass type
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom7"
+                            value="Watch hands">
+
+                        <label for="custom7">
+                            🕐 Watch hands
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom8"
+                            value="Watch size">
+
+                        <label for="custom8">
+                            📏 Watch size
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="checkbox"
+                            name="customization"
+                            id="custom9"
+                            value="Engraving/Personalization">
+
+                        <label for="custom9">
+                            ✍️ Engraving / Personalization
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <input
+                    type="text"
+                    name="otherCustomization"
+                    class="other-input"
+                    placeholder="Other customization...">
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 06
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 06
+                </div>
+
+
+                <h2>
+                    How important is customization when buying a watch?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="importance"
+                            id="imp1"
+                            value="Very important"
+                            required>
+
+                        <label for="imp1">
+                            Very important
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="importance"
+                            id="imp2"
+                            value="Important">
+
+                        <label for="imp2">
+                            Important
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="importance"
+                            id="imp3"
+                            value="Somewhat important">
+
+                        <label for="imp3">
+                            Somewhat important
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="importance"
+                            id="imp4"
+                            value="Not very important">
+
+                        <label for="imp4">
+                            Not very important
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="importance"
+                            id="imp5"
+                            value="Not important at all">
+
+                        <label for="imp5">
+                            Not important at all
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 07
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 07
+                </div>
+
+
+                <h2>
+                    Would you support a new Indian watch brand that
+                    lets you customize your own watch?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="support"
+                            id="sup1"
+                            value="Definitely yes"
+                            required>
+
+                        <label for="sup1">
+                            Definitely yes 👍
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="support"
+                            id="sup2"
+                            value="Probably yes">
+
+                        <label for="sup2">
+                            Probably yes
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="support"
+                            id="sup3"
+                            value="Maybe">
+
+                        <label for="sup3">
+                            Maybe
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="support"
+                            id="sup4"
+                            value="Probably not">
+
+                        <label for="sup4">
+                            Probably not
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="support"
+                            id="sup5"
+                            value="Definitely not">
+
+                        <label for="sup5">
+                            Definitely not
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 08
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 08
+                </div>
+
+
+                <h2>
+                    How much would you be willing to pay
+                    for a customizable watch?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            id="price1"
+                            value="Below ₹1,000"
+                            required>
+
+                        <label for="price1">
+                            Below ₹1,000
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            id="price2"
+                            value="₹1,000 - ₹2,000">
+
+                        <label for="price2">
+                            ₹1,000 – ₹2,000
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            id="price3"
+                            value="₹2,000 - ₹3,000">
+
+                        <label for="price3">
+                            ₹2,000 – ₹3,000
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            id="price4"
+                            value="₹3,000 - ₹5,000">
+
+                        <label for="price4">
+                            ₹3,000 – ₹5,000
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            id="price5"
+                            value="₹5,000 - ₹10,000">
+
+                        <label for="price5">
+                            ₹5,000 – ₹10,000
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            id="price6"
+                            value="More than ₹10,000">
+
+                        <label for="price6">
+                            More than ₹10,000
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 09
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 09
+                </div>
+
+
+                <h2>
+                    Would you prefer to buy a watch made in India
+                    if its quality and design are comparable to
+                    international brands?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="india"
+                            id="india1"
+                            value="Definitely yes"
+                            required>
+
+                        <label for="india1">
+                            Definitely yes 🇮🇳
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="india"
+                            id="india2"
+                            value="Probably yes">
+
+                        <label for="india2">
+                            Probably yes
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="india"
+                            id="india3"
+                            value="Maybe">
+
+                        <label for="india3">
+                            Maybe
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="india"
+                            id="india4"
+                            value="Probably not">
+
+                        <label for="india4">
+                            Probably not
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="india"
+                            id="india5"
+                            value="Definitely not">
+
+                        <label for="india5">
+                            Definitely not
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 10
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 10
+                </div>
+
+
+                <h2>
+                    If you could completely design your own watch,
+                    how likely would you be to purchase it?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="purchase"
+                            id="pur1"
+                            value="Very likely"
+                            required>
+
+                        <label for="pur1">
+                            Very likely
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="purchase"
+                            id="pur2"
+                            value="Likely">
+
+                        <label for="pur2">
+                            Likely
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="purchase"
+                            id="pur3"
+                            value="Not sure">
+
+                        <label for="pur3">
+                            Not sure
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="purchase"
+                            id="pur4"
+                            value="Unlikely">
+
+                        <label for="pur4">
+                            Unlikely
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="purchase"
+                            id="pur5"
+                            value="Very unlikely">
+
+                        <label for="pur5">
+                            Very unlikely
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 11
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 11
+                </div>
+
+
+                <h2>
+                    Would you recommend a customizable watch
+                    brand to your friends or family?
+                </h2>
+
+
+                <div class="options">
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="recommend"
+                            id="rec1"
+                            value="Definitely yes"
+                            required>
+
+                        <label for="rec1">
+                            Definitely yes
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="recommend"
+                            id="rec2"
+                            value="Probably yes">
+
+                        <label for="rec2">
+                            Probably yes
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="recommend"
+                            id="rec3"
+                            value="Maybe">
+
+                        <label for="rec3">
+                            Maybe
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="recommend"
+                            id="rec4"
+                            value="Probably not">
+
+                        <label for="rec4">
+                            Probably not
+                        </label>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <input
+                            type="radio"
+                            name="recommend"
+                            id="rec5"
+                            value="Definitely not">
+
+                        <label for="rec5">
+                            Definitely not
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 12
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 12
+                </div>
+
+
+                <h2>
+                    What features would you like to see
+                    in a customizable watch brand?
+                </h2>
+
+
+                <textarea
+                    name="features"
+                    placeholder="Tell us your ideas..."
+                    required></textarea>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 QUESTION 13
+            ====================================== -->
+
+            <div class="question">
+
+                <div class="question-number">
+                    QUESTION 13
+                </div>
+
+
+                <h2>
+                    Any suggestions or feedback for our new
+                    Made-in-India customizable watch brand?
+                </h2>
+
+
+                <textarea
+                    name="feedback"
+                    placeholder="Share your suggestions or feedback...">
+                </textarea>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 PRIVACY / DATA INFORMATION
+            ====================================== -->
+
+            <div class="privacy-section">
+
+                <h3>
+                    🔒 Privacy & Data
+                </h3>
+
+                <p>
+                    Name and email are optional. You may submit
+                    this survey anonymously.
+                </p>
+
+                <p>
+                    Your responses are collected only for
+                    market research and product development.
+                </p>
+
+                <p>
+                    If you provide your name or email and later
+                    want your response removed, you can request
+                    deletion from the survey administrator.
+                </p>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 SUBMIT
+            ====================================== -->
+
+            <div class="submit-area">
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Submit Survey 🚀
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+
+
+        <!-- =========================================
+             THANK YOU MESSAGE
+        ========================================== -->
+
+        <div
+            class="thank-you"
+            id="thankYou">
+
+
+            <div class="emoji">
+                🎉
+            </div>
+
+
+            <h1>
+                Thank You!
+            </h1>
+
+
+            <p>
+
+                Your response has been submitted successfully.
+
+                <br>
+
+                Your feedback will help us build a watch
+                that is truly your own. ⌚
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,974 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea 0%,
+            #764ba2 50%,
+            #f093fb 100%
+        );
+
+    min-height: 100vh;
+
+    padding: 30px 15px;
+
+    color: #222;
+
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b5fef,
+            #8b3fd9,
+            #d6298f
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 30px;
+
+    border-radius: 22px 22px 0 0;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+
+}
+
+
+.watch-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.header h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.header p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.6;
+
+    font-size: 16px;
+
+}
+
+
+.time {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 9px 18px;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   PROGRESS CONTAINER
+========================================= */
+
+.progress-container {
+
+    background: white;
+
+    padding: 20px 25px;
+
+}
+
+
+.progress-text {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #555;
+
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 10px;
+
+    background: #e8e8e8;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-fill {
+
+    height: 100%;
+
+    width: 0%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #667eea,
+            #8b3fd9,
+            #d6298f
+        );
+
+    border-radius: 20px;
+
+    transition: width 0.3s ease;
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+#surveyForm {
+
+    background: #f7f7fb;
+
+    padding: 25px 0 40px;
+
+}
+
+
+/* =========================================
+   QUESTION CARD
+========================================= */
+
+.question {
+
+    background: white;
+
+    margin: 20px 25px;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    border: 1px solid #eeeeee;
+
+}
+
+
+.question-number {
+
+    display: inline-block;
+
+    color: #713bd1;
+
+    background: #f0eaff;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.question h2 {
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+    color: #222;
+
+}
+
+
+.subtitle {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-top: -10px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   ABOUT YOU SECTION
+========================================= */
+
+.respondent-info {
+
+    border-top: 4px solid #764ba2;
+
+}
+
+
+.optional-note {
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+
+}
+
+
+.input-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.input-group label {
+
+    display: block;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+}
+
+
+.input-group label span {
+
+    font-size: 13px;
+
+    font-weight: normal;
+
+    color: #777;
+
+}
+
+
+.input-group label .required {
+
+    color: #e63946;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   TEXT INPUTS
+========================================= */
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 2px solid #e1e1e1;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 15px;
+
+    color: #333;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.input-group input::placeholder {
+
+    color: #aaa;
+
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+
+    border-color: #764ba2;
+
+    box-shadow:
+        0 0 0 3px rgba(118, 75, 162, 0.12);
+
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.input-group select {
+
+    cursor: pointer;
+
+    appearance: auto;
+
+}
+
+
+/* =========================================
+   PRIVACY NOTE
+========================================= */
+
+.privacy-note {
+
+    margin-top: 8px;
+
+    padding: 14px 16px;
+
+    background: #f5f1ff;
+
+    border-left: 4px solid #764ba2;
+
+    border-radius: 8px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   RADIO & CHECKBOX OPTIONS
+========================================= */
+
+.options {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.option {
+
+    position: relative;
+
+}
+
+
+.option input {
+
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+
+.option label {
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 52px;
+
+    padding: 12px 15px;
+
+    background: #fafafa;
+
+    border: 2px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    color: #333;
+
+    transition:
+        all 0.2s ease;
+
+}
+
+
+/* Hover */
+
+.option label:hover {
+
+    border-color: #9b6de3;
+
+    background: #faf7ff;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* Selected */
+
+.option input:checked + label {
+
+    border-color: #764ba2;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0eaff,
+            #fceaf7
+        );
+
+    color: #5c2994;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 3px 10px rgba(118, 75, 162, 0.12);
+
+}
+
+
+/* =========================================
+   OTHER CUSTOMIZATION INPUT
+========================================= */
+
+.other-input {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 14px 16px;
+
+    border: 2px solid #e1e1e1;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.other-input:focus {
+
+    border-color: #764ba2;
+
+    box-shadow:
+        0 0 0 3px rgba(118, 75, 162, 0.12);
+
+}
+
+
+.other-input::placeholder {
+
+    color: #aaa;
+
+}
+
+
+/* =========================================
+   TEXTAREAS
+========================================= */
+
+.question textarea {
+
+    width: 100%;
+
+    min-height: 130px;
+
+    resize: vertical;
+
+    padding: 15px 16px;
+
+    border: 2px solid #e1e1e1;
+
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.question textarea:focus {
+
+    border-color: #764ba2;
+
+    box-shadow:
+        0 0 0 3px rgba(118, 75, 162, 0.12);
+
+}
+
+
+.question textarea::placeholder {
+
+    color: #aaa;
+
+}
+
+
+/* =========================================
+   PRIVACY & DATA SECTION
+========================================= */
+
+.privacy-section {
+
+    margin: 20px 25px;
+
+    padding: 22px 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f3ff,
+            #fff5fb
+        );
+
+    border: 1px solid #e4d8f5;
+
+    border-radius: 14px;
+
+}
+
+
+.privacy-section h3 {
+
+    color: #5c2994;
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.privacy-section p {
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+
+}
+
+
+.privacy-section p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================
+   SUBMIT AREA
+========================================= */
+
+.submit-area {
+
+    padding: 10px 25px 0;
+
+}
+
+
+.submit-btn {
+
+    width: 100%;
+
+    padding: 17px 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #5b5fef,
+            #8b3fd9,
+            #d6298f
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(118, 75, 162, 0.3);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+
+}
+
+
+.submit-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(118, 75, 162, 0.35);
+
+}
+
+
+.submit-btn:active {
+
+    transform: translateY(0);
+
+}
+
+
+.submit-btn:disabled {
+
+    cursor: not-allowed;
+
+    opacity: 0.8;
+
+    transform: none;
+
+}
+
+
+/* =========================================
+   THANK YOU
+========================================= */
+
+.thank-you {
+
+    display: none;
+
+    background: white;
+
+    text-align: center;
+
+    padding: 70px 30px;
+
+    border-radius: 0 0 22px 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+
+}
+
+
+.thank-you .emoji {
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.thank-you h1 {
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #5b5fef,
+            #d6298f
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.thank-you p {
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+
+    body {
+
+        padding: 15px 8px;
+
+    }
+
+
+    .header {
+
+        padding: 35px 20px;
+
+        border-radius: 16px 16px 0 0;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .header p {
+
+        font-size: 14px;
+
+    }
+
+
+    .watch-icon {
+
+        font-size: 45px;
+
+    }
+
+
+    .progress-container {
+
+        padding: 16px 18px;
+
+    }
+
+
+    .question {
+
+        margin: 15px 10px;
+
+        padding: 22px 18px;
+
+    }
+
+
+    .question h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .options {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .option label {
+
+        min-height: 50px;
+
+    }
+
+
+    .privacy-section {
+
+        margin: 15px 10px;
+
+        padding: 18px;
+
+    }
+
+
+    .submit-area {
+
+        padding: 5px 10px 0;
+
+    }
+
+
+    .submit-btn {
+
+        font-size: 16px;
+
+    }
+
+
+    .thank-you {
+
+        padding: 55px 20px;
+
+        border-radius: 0 0 16px 16px;
+
+    }
+
+
+    .thank-you h1 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .header h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .question {
+
+        padding: 18px 15px;
+
+    }
+
+
+    .question h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .input-group input,
+    .input-group select {
+
+        font-size: 14px;
+
+        padding: 13px;
+
+    }
+
+}
