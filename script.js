@@ -438,7 +438,7 @@ form.addEventListener(
         submitButton.disabled = true;
 
         submitButton.textContent =
-            "Submitted! 🚀";
+            "Submitted ✓";
 
 
 
